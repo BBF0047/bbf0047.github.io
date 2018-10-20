@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title><![CDATA[Python-基础语法]]></title>
+    <url>%2F2018%2F10%2F20%2FPython-%E4%BB%8B%E7%BB%8D%2F</url>
+    <content type="text"><![CDATA[第一个 Python 程序交互式编程交互式编程不需要创建脚本文件，是通过 Python 解释器的交互模式进来编写代码。Linux上你至需要在命令行中输入Python命令即可启动交互式编程，提示窗口如下：12]]></content>
+      <categories>
+        <category>编程之道</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
