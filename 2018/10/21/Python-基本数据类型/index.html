@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="nMark&#39;s Blog">
 <meta property="og:description" content="变量 Python 中的变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。   Python 中变量就是变量，它没有类型，所说的“类型”是变量所指的内存对象的类型。  123counter = 100        # 整形变量miles   = 1000.0     # 浮点型变量name    = &quot;Apple&quot;    # 字符串 备注：等号 = 用来给变量赋值。等号">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-21T02:20:17.937Z">
+<meta property="og:updated_time" content="2018-10-21T04:48:38.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-基本数据类型">
 <meta name="twitter:description" content="变量 Python 中的变量不需要声明，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。   Python 中变量就是变量，它没有类型，所说的“类型”是变量所指的内存对象的类型。  123counter = 100        # 整形变量miles   = 1000.0     # 浮点型变量name    = &quot;Apple&quot;    # 字符串 备注：等号 = 用来给变量赋值。等号">
@@ -481,7 +481,72 @@
 </ul>
 <table><tr><td bgcolor="gray"><em>注意：在 Python2 中没有布尔型的，它用数字 0 表示 False ， 用 1 表示 True 。 到 Python3 中，把 True 和 False 定义成关键字了。但它们的值还是 1 和 0 ，它们可以和数字相加。</em></td></tr></table>
 
-
+<p><strong> 当指定一个值时，Number 对象就会被创建。 </strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var1 = <span class="number">1</span></span><br><span class="line">var2 = <span class="number">10</span></span><br></pre></td></tr></table></figure>
+<p><strong> 也可以使用 del 语句删除一些对象引用</strong></p>
+<p><em>del语法：</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> var1[,var2[,var3[......,varN]]]</span><br></pre></td></tr></table></figure>
+<p><em>del语句删除单个或多个对象：</em></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> var1</span><br><span class="line"><span class="keyword">del</span> var1,var2</span><br></pre></td></tr></table></figure>
+<h3 id="数值运算"><a href="#数值运算" class="headerlink" title="数值运算"></a>数值运算</h3><p><strong> 实例 </strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span> + <span class="number">4</span>       <span class="comment"># 加法</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">4.3</span> - <span class="number">2</span>     <span class="comment"># 减法</span></span><br><span class="line"><span class="number">2.3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">3</span> * <span class="number">7</span>       <span class="comment"># 乘法</span></span><br><span class="line"><span class="number">21</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> / <span class="number">4</span>       <span class="comment"># 除法，得到一个浮点数</span></span><br><span class="line"><span class="number">0.5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> // <span class="number">4</span>      <span class="comment"># 除法，得到一个整数</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">17</span> % <span class="number">3</span>      <span class="comment"># 取余</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">2</span> ** <span class="number">5</span>      <span class="comment"># 乘法</span></span><br><span class="line"><span class="number">32</span></span><br></pre></td></tr></table></figure>
+<p><em>注意：</em></p>
+<ul>
+<li><p>Python 可以同时为多个变量赋值。</p>
+</li>
+<li><p>一个变量可以通过赋值指向不同类型的对象。</p>
+</li>
+<li><p>数值的除法包含两个运算符：<code>/</code> 返回一个浮点数，<code>//</code>返回一个整数。</p>
+</li>
+<li><p>混合计算时，Python 会把整型转换成浮点数。</p>
+</li>
+</ul>
+<h3 id="数值类型实例"><a href="#数值类型实例" class="headerlink" title="数值类型实例"></a>数值类型实例</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">int</th>
+<th style="text-align:center">float</th>
+<th style="text-align:center">complex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">0.0</td>
+<td style="text-align:center">3.14j</td>
+</tr>
+<tr>
+<td style="text-align:center">100</td>
+<td style="text-align:center">15.20</td>
+<td style="text-align:center">45.j</td>
+</tr>
+<tr>
+<td style="text-align:center">-786</td>
+<td style="text-align:center">-21.9</td>
+<td style="text-align:center">9.322e-36j</td>
+</tr>
+<tr>
+<td style="text-align:center">080</td>
+<td style="text-align:center">32.3e+18</td>
+<td style="text-align:center">.876j</td>
+</tr>
+<tr>
+<td style="text-align:center">-0490</td>
+<td style="text-align:center">-90.</td>
+<td style="text-align:center">-.6545+0J</td>
+</tr>
+<tr>
+<td style="text-align:center">-0x260</td>
+<td style="text-align:center">-32.54e100</td>
+<td style="text-align:center">3e+26J</td>
+</tr>
+<tr>
+<td style="text-align:center">0x69</td>
+<td style="text-align:center">70.2E-12</td>
+<td style="text-align:center">4.53e-7j</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -673,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多个变量"><span class="nav-number">1.1.</span> <span class="nav-text">多个变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准数据类型"><span class="nav-number">2.</span> <span class="nav-text">标准数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number（数字）"><span class="nav-number">3.</span> <span class="nav-text">Number（数字）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多个变量"><span class="nav-number">1.1.</span> <span class="nav-text">多个变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准数据类型"><span class="nav-number">2.</span> <span class="nav-text">标准数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number（数字）"><span class="nav-number">3.</span> <span class="nav-text">Number（数字）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数值运算"><span class="nav-number">3.1.</span> <span class="nav-text">数值运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数值类型实例"><span class="nav-number">3.2.</span> <span class="nav-text">数值类型实例</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -702,7 +767,7 @@
 
 <class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.7k字</span>
+  <span class="post-count">博客全站共3k字</span>
 
 
         
